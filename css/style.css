@@ -1,0 +1,189 @@
+/* AUTHOR: PRABHAKAR ACHARYA
+   DATE  : 04.09.2018
+   THIS DOCUMENT WAS CREATED FOR THE PRACTICE PURPOSE ONLY.
+ */
+/* universal selector... */
+/* Using box sizing for clearing all conflicting layouts. */
+
+/* WEB FONTS - can be downloaded from either third party or google.*/
+
+@font-face{
+    font-family: 'Abolition Regular';
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abolition-regular-webfont.woff') format('woff'),
+         url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+/* ##############TYPE SELECTORS################## */
+
+body{
+    background: linear-gradient( #3a3a3a, transparent 40%),
+                linear-gradient(120deg, rgb(136, 134, 134), transparent),
+                #202020 url('../img/vr-headset-1.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    font: 1em/1.5 , Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
+}
+h1, h2{
+     font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+h1{
+    font-size: 14.625rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top:50px;
+}
+h1, p, figcaption{
+    color: rgba(255, 255, 255, .75);
+}
+
+img {
+    max-width: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+
+/* -----Header-----  */
+
+.t-border{
+    
+    border-bottom: 1px solid rgba(196, 92, 7, 0.3);
+}
+
+
+
+.title{
+    color:  rgba(255, 255, 255, .6);
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 0;
+}
+.navbar{
+    
+    opacity: 0.9;
+}
+.main-navigation a{
+    text-decoration: none;
+    line-height: 1.3;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.container{
+    margin: 25px;
+    width: 80%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin:0 auto;
+    max-width: 1050px;
+}
+
+.primary-content{
+    margin: 50px 0 75px 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.fig-container{
+    display: inline-block;
+    padding: 1.5rem;
+    width: 300px;
+    height:450px;
+  
+}
+
+
+
+/*  all contents are given fixed width and aligned center  */
+
+
+/* Footer */
+#main-footer{
+    background-color: #202020;
+    color:  rgba(255, 255, 255, .40);
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 2rem 0;
+}
+
+/* pseudoclasses */
+
+img:hover{
+    cursor: pointer;
+}
+.main-navigation a:hover{
+    color:  rgba(255, 255, 255, .9);
+    border-bottom: 1px solid maroon;
+}
+
+a:link {
+    color: rgb(255, 169, 73);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: lightblue;
+  }
+  
+  a:hover {
+    color: rgba(255, 169, 73, .4);
+  }         
+  
+  a:active {
+    color: lightcoral;
+  }
+  
+
+
+/* ================================= 
+  Media Queries, mobile first approach queries starts with the min-width.
+==================================== */
+
+@media (max-width: 1024px){
+    
+}
+
+@media all and (min-width: 768px){
+    
+    .wrap{
+        min-height: calc(100vh - 128px);
+    }
+
+    .main-header{
+        padding: 50px 0; /* collapses the gap between body and the header.*/
+        height: 650px;
+        border-bottom: none;
+        text-align: center;
+        opacity: 0.8;
+        margin-bottom: 0;
+    }
+
+   .title{
+       font-size: 14px;
+   }
+}
+
+@media all and (max-width: 440px){
+
+    
+    .main-header{
+        
+        padding: 5px 3px 0;
+        margin: 0 auto;
+    }   
+    h1{
+        font-size: 3.625rem;
+    }
+}
+
+
