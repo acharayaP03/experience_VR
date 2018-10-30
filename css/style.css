@@ -51,12 +51,12 @@ img {
     margin-bottom: 20px;
     border-radius: 10px;
   }
-  
+
 
 /* -----Header-----  */
 
 .t-border{
-    
+
     border-bottom: 1px solid rgba(196, 92, 7, 0.3);
 }
 
@@ -69,7 +69,7 @@ img {
     margin-top: 0;
 }
 .navbar{
-    
+
     opacity: 0.9;
 }
 .main-navigation a{
@@ -99,7 +99,7 @@ img {
     padding: 1.5rem;
     width: 300px;
     height:450px;
-  
+
 }
 
 
@@ -130,31 +130,31 @@ a:link {
     color: rgb(255, 169, 73);
     text-decoration: none;
   }
-  
+
   a:visited {
     color: lightblue;
   }
-  
+
   a:hover {
     color: rgba(255, 169, 73, .4);
-  }         
-  
+  }
+
   a:active {
     color: lightcoral;
   }
-  
 
 
-/* ================================= 
+
+/* =================================
   Media Queries, mobile first approach queries starts with the min-width.
 ==================================== */
 
 @media (max-width: 1024px){
-    
+
 }
 
 @media all and (min-width: 768px){
-    
+
     .wrap{
         min-height: calc(100vh - 128px);
     }
@@ -165,25 +165,18 @@ a:link {
         border-bottom: none;
         text-align: center;
         opacity: 0.8;
-        margin-bottom: 0;
     }
-
-   .title{
-       font-size: 14px;
-   }
 }
 
 @media all and (max-width: 440px){
 
-    
+
     .main-header{
-        
+
         padding: 5px 3px 0;
         margin: 0 auto;
-    }   
+    }
     h1{
         font-size: 3.625rem;
     }
 }
-
-
